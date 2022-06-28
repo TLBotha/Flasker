@@ -1,0 +1,34 @@
+<h1>Hello World!!!</h1>
+
+<p>This is my first webpage!!!</p>
+
+<p>My name is {{ first_name }}</p>
+
+<h2>Jinja Filters</h2>
+<hr>
+<h3>safe</h3>
+<p>{{ stuff_safe_striptags|safe }}</p>
+
+<h3>capitalize</h3>
+<p>{{ stuff|capitalize }}</p>
+
+<h3>lower</h3>
+<p>{{ stuff|lower }}</p>
+
+<h3>upper</h3>
+<p>{{ stuff|upper }}</p>
+
+<h3>title</h3>
+<p>{{ stuff|title }}</p>
+
+<h3>trim</h3>
+<p>{{ stuff|trim }}</p>
+
+<h3>striptags</h3>
+<p>{{ stuff_safe_striptags|striptags }}</p>
+
+<h3>Favorite Pizza</h3>
+
+{% for topping in favorite_pizza %}
+    {{ topping }}<br/>
+{% endfor %}
